@@ -4,11 +4,11 @@
 
 # terminal emulator
 super + Return
-	alacritty
+	xst
 
 # program launcher
 super + @space
-	dmenu_run
+	dmenu_run -fn 'Open Sans:size=14' -nb '#fdf6e3' -nf '#5c6a72' -sb '#8da101'
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -120,36 +120,18 @@ super + alt + shift + {h,j,k,l}
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
-# adjust brightness
-super + F11
-	brightnessctl s 1%-
-super + F12
-	brightnessctl s +1%
-
-# reset keymap
+# reset keyboard layout
 super + F10
-	setxkbmap br abnt2
+	setxkbmap br anbt2
 
-# web browser
-super + shift + b
-	firefox
+# decrease brightness
+super + F11
+	xbacklight -dec 1%
 
-# file manager
-super + shift + f
-	nemo
+# increase brightness
+super + F12
+	xbacklight -inc 1%
 
-# text processor
-super + shift + 1
-	libreoffice -writer
-
-# spreadsheet processor
-super + shift + 2
-	libreoffice -calc
-
-# presentation processor
-super + shift + 3
-	libreoffice -impress
-
-# e-mail client
-super + shift + e
-	thunderbird
+# switch theme mode
+super + F9
+	switchTheme
