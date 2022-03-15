@@ -4,14 +4,15 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 
 bspc monitor -d I II III IV V VI VII VIII IX X
 
-xrdb -merge /home/gabriel/.Xresources &
-xst &
-setxkbmap br abnt2 &
-hsetroot -solid "#005577" &
-xsetroot -cursor_name left_ptr &
+xst 															&
+setxkbmap br abnt2 								&
+hsetroot -solid "#e1f7e7" 				&
+xsetroot -cursor_name left_ptr 		&
 
-bspc config border_width         2
-bspc config window_gap          12
+bspc config border_width         	2
+bspc config window_gap          	12
+bspc config normal_border_color 	"#d3dbc3"
+bspc config focused_border_color 	"#93dd00"
 
 bspc config split_ratio          	0.50
 bspc config borderless_monocle   	true

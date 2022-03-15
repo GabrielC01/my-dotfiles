@@ -13,7 +13,6 @@ if exists('+termguicolors')
 endif
 set background=light
 colorscheme everforest
-"colorscheme solarized8_low
 
 let mapleader = ','
 
