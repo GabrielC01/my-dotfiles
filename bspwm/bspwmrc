@@ -4,19 +4,19 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 
 bspc monitor -d I II III IV V VI VII VIII IX X
 
-xst 															&
-setxkbmap br abnt2 								&
-hsetroot -solid "#e1f7e7" 				&
-xsetroot -cursor_name left_ptr 		&
+setxkbmap br abnt2 &
+xsetroot -solid "#4f5b93" &
+xsetroot -cursor_name left_ptr &
+xterm &
 
-bspc config border_width         	2
-bspc config window_gap          	12
-bspc config normal_border_color 	"#d3dbc3"
-bspc config focused_border_color 	"#93dd00"
+bspc config border_width         2
+bspc config window_gap           5
+bspc config normal_border_color  "#aaccaa"
+bspc config focused_border_color "#00ff00"
 
-bspc config split_ratio          	0.50
-bspc config borderless_monocle   	true
-bspc config gapless_monocle      	true
-bspc config single_monocle	 			true
+bspc config split_ratio          0.52
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+bspc config single_monocle	 true
 
-bspc rule -a Qutebrowser desktop='^2'
+bspc rule -a Firefox desktop='^2'

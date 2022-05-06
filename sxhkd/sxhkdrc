@@ -4,11 +4,11 @@
 
 # terminal emulator
 super + Return
-	xst
+	xterm
 
 # program launcher
 super + @space
-	dmenu_run -fn 'Open Sans:size=14' -nb '#fdf6e3' -nf '#5c6a72' -sb '#8da101'
+	dmenu_run
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -122,16 +122,12 @@ super + {Left,Down,Up,Right}
 
 # reset keyboard layout
 super + F10
-	setxkbmap br anbt2
+	setxkbmap br abnt2
 
 # decrease brightness
 super + F11
-	xbacklight -dec 1%
+	xbacklight -dec 1
 
 # increase brightness
 super + F12
-	xbacklight -inc 1%
-
-# switch theme mode
-super + F9
-	switchTheme
+	xbacklight -inc 1
