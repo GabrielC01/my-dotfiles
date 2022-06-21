@@ -3,13 +3,13 @@
 ! see src/config.h for more information about option meanings.
 
 ! --- These options only take effect on startup. ---
-st.termname:     xst-256color
+st.termname:     xst
 
 ! Set to a non-zero value to disable window decorations (titlebar, etc) and go borderless.
 st.borderless:        1
 
 ! --- The following options options can be reloaded via USR1 signal. ---
-st.font:              Fira Code Nerd Font:pixelsize=18:antialias=true:autohint=true;
+st.font:              Inconsolata:pixelsize=20:antialias=true:autohint=true;
 
 ! window padding
 st.borderpx:          10
@@ -24,7 +24,7 @@ st.cursorthickness:   2
 st.cursorblinkstyle:  0
 
 ! 0: cursor blinks with a constant interval; 1: blinking cycle resets on key input
-st.cursorblinkontype: 0
+st.cursorblinkontype: 1
 
 st.disablebold:         0
 st.disableitalics:         0
@@ -40,7 +40,7 @@ st.chscale:           1.0
 st.cwscale:           1.0
 
 ! blinking timeout for terminal and cursor blinking (0 disables)
-st.blinktimeout:      200
+st.blinktimeout:      800
 
 ! bell volume. Value between -100 and 100. (0 disables)
 st.bellvolume:        100
@@ -70,44 +70,28 @@ st.opacity:      255
 ! without the composition)
 st.disable_alpha_correction: 0
 
-! Everforest dark
-!st*.foreground:   #d3c6aa
-!st*.background:   #323d43
-!st*.cursorColor:  #ecf0c1
-!st*.color0:       #505a60
-!st*.color1:       #e67e80
-!st*.color2:       #a7c080
-!st*.color3:       #dbbc7f
-!st*.color4:       #7fbbb3
-!st*.color5:       #d6b6b3
-!st*.color6:       #83c092
-!st*.color7:       #d3c6aa
-!st*.color8:       #505a60
-!st*.color9:       #e67e80
-!st*.color10:      #a7c080
-!st*.color11:      #dbbc7f
-!st*.color12:      #7fbbb3
-!st*.color13:      #d6b6b3
-!st*.color14:      #83c092
-!st*.color15:      #d3c6aa
-
-! Everforest light
-st*.foreground:   #5c6a72
-st*.background:   #fdf6e3
-st*.cursorColor:  #ecf0c1
-st*.color0:       #5c6a72
-st*.color1:       #f85552
-st*.color2:       #8da101
-st*.color3:       #dfa000
-st*.color4:       #3a94c5
-st*.color5:       #df69ba
-st*.color6:       #35a77c
-st*.color7:       #dcd8c4
-st*.color8:       #5c6a72
-st*.color9:       #f85552
-st*.color10:      #8da101
-st*.color11:      #dfa000
-st*.color12:      #3a94c5
-st*.color13:      #df69ba
-st*.color14:      #35a77c
-st*.color15:      #dcd8c4
+! colors -- this is the base16-twilight colorscheme.
+st.foreground:   #008700
+st.background:   #eeeeee
+st.color0:       #eeeeee
+st.color1:       #af0000
+st.color2:       #008700
+st.color3:       #5f8700
+st.color4:       #0087af
+st.color5:       #878787
+st.color6:       #005f87
+st.color7:       #444444
+st.color8:       #bcbcbc
+st.color9:       #d70000
+st.color10:      #d70087
+st.color11:      #8700af
+st.color12:      #d75f00
+st.color13:      #d75f00
+st.color14:      #005faf
+st.color15:      #005f87
+!st.color16:      #cda869
+!st.color17:      #9b703f
+!st.color18:      #323537
+!st.color19:      #464b50
+!st.color20:      #838184
+!st.color21:      #c3c3c3
