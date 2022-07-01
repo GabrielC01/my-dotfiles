@@ -4,7 +4,7 @@
 
 # terminal emulator
 super + Return
-	xst
+	xterm
 
 # program launcher
 super + @space
@@ -119,3 +119,11 @@ super + alt + shift + {h,j,k,l}
 # move a floating window
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+# decrease brightness
+super + F11
+	brightnessctl s 5%-
+
+# increase brightness
+super + F12
+	brightnessctl s +5%
