@@ -8,7 +8,7 @@ super + Return
 
 # program launcher
 super + @space
-	dmenu_run -fn "Fira Sans 20" -nb "#eeeeee" -nf "#00bf00" -sb "#eeeeee" -sf "#bfac00"
+	dmenu_run -fn "Mononoki 14" -nb "#eeeee0" -nf "#000080" -sb "#eeeee0" -sf "#fbb700"
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -119,11 +119,3 @@ super + alt + shift + {h,j,k,l}
 # move a floating window
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
-
-# decrease brightness
-super + F11
-	brightnessctl s 5%-
-
-# increase brightness
-super + F12
-	brightnessctl s +5%
