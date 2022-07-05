@@ -1,97 +1,31 @@
-! These are all possible options, presented with default values.
-! xst will fallback to *.option if st.option is not present.
-! see src/config.h for more information about option meanings.
+XTerm*faceName: mononoki
+XTerm*faceSize: 14
+XTerm*vt100.backarrowKey: false
+XTerm*vt100.saveLines: 1000
+XTerm*ttyModes: erase ^?
+XTerm*VT100.Translations: #override \
+      Shift Ctrl<Key>V: insert-selection(CLIPBOARD) \n\ 
+      Shift Ctrl<Key>V: insert-selection(PRIMARY) \n\ 
+      Shift<Btn1Down>: select-start() \n\ 
+      Shift<Btn1Motion>: select-extend() \n\ 
+      Shift<Btn1Up>: select-end(CLIPBOARD) \n\
 
-! --- These options only take effect on startup. ---
-st.termname:     xst
 
-! Set to a non-zero value to disable window decorations (titlebar, etc) and go borderless.
-st.borderless:        1
-
-! --- The following options options can be reloaded via USR1 signal. ---
-st.font:              Inconsolata:pixelsize=20:antialias=true:autohint=true;
-
-! window padding
-st.borderpx:          10
-
-! Available cursor values: 2 4 6 7 = █ _ | ☃ ( 1 3 5 are blinking versions)
-st.cursorshape:       2
-
-! thickness of underline and bar cursors
-st.cursorthickness:   2
-
-! 0: normal blinking, 1: leave cursor border and blink with cursor's background
-st.cursorblinkstyle:  0
-
-! 0: cursor blinks with a constant interval; 1: blinking cycle resets on key input
-st.cursorblinkontype: 1
-
-st.disablebold:         0
-st.disableitalics:         0
-st.disableroman:         0
-
-! Amount of lines scrolled
-st.scrollrate:  1
-
-! Kerning / character bounding-box height multiplier
-st.chscale:           1.0
-
-! Kerning / character bounding-box width multiplier
-st.cwscale:           1.0
-
-! blinking timeout for terminal and cursor blinking (0 disables)
-st.blinktimeout:      800
-
-! bell volume. Value between -100 and 100. (0 disables)
-st.bellvolume:        100
-
-! 1: render most of the lines/blocks characters without using the font for
-! perfect alignment between cells (U2500 - U259F except dashes/diagonals).
-! Bold affects lines thickness if boxdraw_bold is not 0. Italic is ignored.
-! 0: disable (render all U25XX glyphs normally from the font).
-st.boxdraw: 0
-
-! (0|1) boxdraw(bold) enable toggle
-st.boxdraw_bold: 0
-
-! braille (U28XX):  1: render as adjacent "pixels",  0: use font
-st.boxdraw_braille: 0
-
-! set this to a non-zero value to force window depth
-st.depth: 0
-
-! opacity==255 means what terminal will be not transparent, 0 - fully transparent
-! (float values in range 0 to 1.0 may also be used)
-st.opacity:      255
-
-! (0|1) don't pre-multiply color values of the pixels when using transparency
-! (useful for the systems where composite manager not running all the time,
-! as color pre-multiplication will make the "opaque" colors look darker/lighter
-! without the composition)
-st.disable_alpha_correction: 0
-
-! colors -- this is the base16-twilight colorscheme.
-st.foreground:   #008700
-st.background:   #eeeeee
-st.color0:       #eeeeee
-st.color1:       #af0000
-st.color2:       #008700
-st.color3:       #5f8700
-st.color4:       #0087af
-st.color5:       #878787
-st.color6:       #005f87
-st.color7:       #444444
-st.color8:       #bcbcbc
-st.color9:       #d70000
-st.color10:      #d70087
-st.color11:      #8700af
-st.color12:      #d75f00
-st.color13:      #d75f00
-st.color14:      #005faf
-st.color15:      #005f87
-!st.color16:      #cda869
-!st.color17:      #9b703f
-!st.color18:      #323537
-!st.color19:      #464b50
-!st.color20:      #838184
-!st.color21:      #c3c3c3
+XTerm*background:	#e7e7e7
+XTerm*foreground:	#007000
+XTerm*color0:		#303030
+XTerm*color1:		#800000
+XTerm*color2:		#008000
+XTerm*color3:		#daa200
+XTerm*color4:		#004080
+XTerm*color5:		#800080
+XTerm*color6:		#008080
+XTerm*color7:		#e7e7e7
+XTerm*color8:		#707070
+XTerm*color9:		#a00000
+XTerm*color10:		#00a000
+XTerm*color11:		#ebb400
+XTerm*color12:		#0070a0
+XTerm*color13:		#a000a0
+XTerm*color14:		#00a0a0
+XTerm*color15:		#f7f7f7
