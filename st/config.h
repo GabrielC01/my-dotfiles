@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Fira Code:pixelsize=14:antialias=true:autohint=true";
+static char *font = "Fira Code Nerd Font:style=Retina:pixelsize=14:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -96,32 +96,32 @@ unsigned int tabspaces = 8;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
-	"gray7",
-	"red3",
-	"green3",
-	"yellow3",
-	"blue3",
-	"magenta3",
-	"cyan3",
+	"#EBEBEB",
+	"#D6000C",
+	"#1D9700",
+	"#C49700",
+	"#0064E4",
+	"#DD0F9D",
+	"#00AD9C",
 	"gray90",
 
 	/* 8 bright colors */
-	"gray50",
-	"red",
-	"green",
-	"yellow",
-	"blue",
-	"magenta",
-	"cyan",
-	"white",
+	"#CDCDCD",
+	"#fc8b83",
+	"#99fc83",
+	"#fcfc83",
+	"#83c7fc",
+	"#ec83fc",
+	"#83fcf8",
+	"#282828",
 
 	[255] = 0,
 
 	/* more colors can be added after 255 to use with DefaultXX */
-	"cornsilk1",
-	"purple4",
-	"cornsilk1", /* default foreground colour */
-	"#3b224c", /* default background colour */
+	"#474747",
+	"#FFFFFF",
+	"#474747", /* default foreground colour */
+	"#FFFFFF", /* default background colour */
 };
 
 
