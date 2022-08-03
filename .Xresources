@@ -1,31 +1,39 @@
-XTerm*faceName: mononoki
-XTerm*faceSize: 14
-XTerm*vt100.backarrowKey: false
-XTerm*vt100.saveLines: 1000
-XTerm*ttyModes: erase ^?
-XTerm*VT100.Translations: #override \
-      Shift Ctrl<Key>V: insert-selection(CLIPBOARD) \n\ 
-      Shift Ctrl<Key>V: insert-selection(PRIMARY) \n\ 
-      Shift<Btn1Down>: select-start() \n\ 
-      Shift<Btn1Motion>: select-extend() \n\ 
-      Shift<Btn1Up>: select-end(CLIPBOARD) \n\
+Xft.hinting: 1
+Xft.hintstyle: hintfull
+Xft.antialias: 1
+Xft.rgba: rgb
 
+UXTerm.termName: xterm
+UXTerm*faceName: Fira Mono
+UXTerm*faceSize: 14
+UXTerm.vt100.locale: true
+UXTerm.vt100.utf8: true
+UXTerm.vt100.metaSendsEscape: true
+UXTerm.vt100.backarrowKey: false
+UXTerm.ttyModes: erase ^?
+UXTerm.vt100.saveLines: 4096
+UXTerm.vt100.scaleHeight: 1.01
 
-XTerm*background:	#e7e7e7
-XTerm*foreground:	#007000
-XTerm*color0:		#303030
-XTerm*color1:		#800000
-XTerm*color2:		#008000
-XTerm*color3:		#daa200
-XTerm*color4:		#004080
-XTerm*color5:		#800080
-XTerm*color6:		#008080
-XTerm*color7:		#e7e7e7
-XTerm*color8:		#707070
-XTerm*color9:		#a00000
-XTerm*color10:		#00a000
-XTerm*color11:		#ebb400
-XTerm*color12:		#0070a0
-XTerm*color13:		#a000a0
-XTerm*color14:		#00a0a0
-XTerm*color15:		#f7f7f7
+UXTerm*vt100.translations: #override \
+    Shift Ctrl <Key> C: copy-selection(CLIPBOARD) \n\
+    Shift Ctrl <Key> V: insert-selection(CLIPBOARD)
+
+*background:              #fafafa
+*foreground:              #383a42
+
+*color0:                  #383a42
+*color1:                  #e45649
+*color2:                  #50a14f
+*color3:                  #c18401
+*color4:                  #0184bc
+*color5:                  #a626a4
+*color6:                  #0997b3
+*color7:                  #fafafa
+*color9:                  #383a42
+*color8:                  #e45649
+*color10:                 #50a14f
+*color11:                 #c18401
+*color12:                 #0184bc
+*color13:                 #a626a4
+*color14:                 #0997b3
+*color15:                 #fafafa
