@@ -1,39 +1,28 @@
+! Font settings
 Xft.hinting: 1
 Xft.hintstyle: hintfull
 Xft.antialias: 1
 Xft.rgba: rgb
 
-UXTerm.termName: xterm
-UXTerm*faceName: Fira Mono
-UXTerm*faceSize: 14
-UXTerm.vt100.locale: true
-UXTerm.vt100.utf8: true
-UXTerm.vt100.metaSendsEscape: true
-UXTerm.vt100.backarrowKey: false
-UXTerm.ttyModes: erase ^?
-UXTerm.vt100.saveLines: 4096
-UXTerm.vt100.scaleHeight: 1.01
-
-UXTerm*vt100.translations: #override \
+! XTerm settings
+XTerm*faceName: Fira Mono
+XTerm*faceSize: 14
+XTerm*vt100.translations: #override \
     Shift Ctrl <Key> C: copy-selection(CLIPBOARD) \n\
     Shift Ctrl <Key> V: insert-selection(CLIPBOARD)
-
-*background:              #fafafa
-*foreground:              #383a42
-
-*color0:                  #383a42
-*color1:                  #e45649
-*color2:                  #50a14f
-*color3:                  #c18401
-*color4:                  #0184bc
-*color5:                  #a626a4
-*color6:                  #0997b3
-*color7:                  #fafafa
-*color9:                  #383a42
-*color8:                  #e45649
-*color10:                 #50a14f
-*color11:                 #c18401
-*color12:                 #0184bc
-*color13:                 #a626a4
-*color14:                 #0997b3
-*color15:                 #fafafa
+XTerm*color0:	#151515
+XTerm*color1:	#9a0000
+XTerm*color2:	#009a00
+XTerm*color3:	#9a9a00
+XTerm*color4:	#00009a
+XTerm*color5:	#9a009a
+XTerm*color6:	#009a9a
+XTerm*color7:	#9a9a9a
+XTerm*color8:	#303030
+XTerm*color9:	#a20000
+XTerm*color10:	#00a200
+XTerm*color11:	#a2a200
+XTerm*color12:	#0000a2
+XTerm*color13:	#a200a2
+XTerm*color14:	#00a2a2
+XTerm*color15:	#a2a2a2
