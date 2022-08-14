@@ -5,24 +5,48 @@ Xft.antialias: 1
 Xft.rgba: rgb
 
 ! XTerm settings
-XTerm*faceName: Fira Mono
+XTerm*faceName: Hack
 XTerm*faceSize: 14
 XTerm*vt100.translations: #override \
     Shift Ctrl <Key> C: copy-selection(CLIPBOARD) \n\
     Shift Ctrl <Key> V: insert-selection(CLIPBOARD)
-XTerm*color0:	#151515
-XTerm*color1:	#9a0000
-XTerm*color2:	#009a00
-XTerm*color3:	#9a9a00
-XTerm*color4:	#00009a
-XTerm*color5:	#9a009a
-XTerm*color6:	#009a9a
-XTerm*color7:	#9a9a9a
-XTerm*color8:	#303030
-XTerm*color9:	#a20000
-XTerm*color10:	#00a200
-XTerm*color11:	#a2a200
-XTerm*color12:	#0000a2
-XTerm*color13:	#a200a2
-XTerm*color14:	#00a2a2
-XTerm*color15:	#a2a2a2
+
+! ST settings
+st.font: Monofoki:pixelsize=20:antialias=true:autohint=true;
+
+! special
+st.foreground:   #00ffa0
+st.background:   #05322F
+st.cursorColor:  #00ffa0
+
+! black
+st.color0:       #808080
+st.color8:       #ababab
+
+! red
+st.color1:       #ff0070
+st.color9:       #ff2270
+
+! green
+st.color2:       #00ff00
+st.color10:      #00ff00
+
+! yellow
+st.color3:       #ffd700
+st.color11:      #ffe800
+
+! blue
+st.color4:       #0070ff
+st.color12:      #00a0ff
+
+! magenta
+st.color5:       #dd00dd
+st.color13:      #ffbbff
+
+! cyan
+st.color6:       #00ffff
+st.color14:      #00ffff
+
+! white
+st.color7:       #dddddd
+st.color15:      #ffffff
