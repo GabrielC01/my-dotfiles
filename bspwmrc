@@ -8,7 +8,7 @@ setxkbmap br abnt2 &
 st &
 xsetroot -solid "#01252d" &
 xsetroot -cursor_name left_ptr &
-redshift -O 4000 &
+redshift -O 6000 &
 
 bspc config border_width         	2
 bspc config window_gap          	8
