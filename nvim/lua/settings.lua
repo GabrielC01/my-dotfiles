@@ -8,7 +8,8 @@ vim.opt.number = true
 vim.opt.textwidth = 80
 vim.opt.linebreak = true
 vim.opt.termguicolors = true
-vim.cmd [[ colorscheme solarized8_flat ]]
+vim.opt.background = "light"
+vim.cmd [[ colorscheme enfocado ]]
 
 -- Key maps
 vim.cmd [[
@@ -41,4 +42,5 @@ vim.cmd [[
 			autocmd BufNewFile *.js 0r ~/Modelos/neovim/skeleton.js
 		augroup END
 	endif
+	let g:lightline = { 'colorscheme': 'enfocado' }
 ]]
