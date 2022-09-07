@@ -10,7 +10,7 @@ vim.cmd [[
 	colorscheme notelight
 
 	let mapleader = ','
-	nmap <S-t>	:tabedit <CR>
+	nmap <S-t>	:tabedit 
 	nmap H		:tabprevious <CR>
 	nmap L		:tabnext <CR>
 	nmap <leader>f :NERDTreeToggle <CR>
