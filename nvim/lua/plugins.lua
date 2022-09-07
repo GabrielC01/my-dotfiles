@@ -1,7 +1,8 @@
 require "paq" {
-	"savq/paq-nvim";                  -- Let Paq manage itself
-	"kyazdani42/nvim-web-devicons";
+    "savq/paq-nvim";                  -- Let Paq manage itself
+
+	"hzchirs/vim-material";
 	"voldikss/vim-floaterm";
-	"wuelnerdotexe/vim-enfocado";
-	"itchyny/lightline.vim";
+	"preservim/nerdtree";
+	"yasukotelin/notelight";
 }
