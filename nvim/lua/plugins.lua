@@ -1,8 +1,12 @@
 require "paq" {
     "savq/paq-nvim";                  -- Let Paq manage itself
 
-	"hzchirs/vim-material";
 	"voldikss/vim-floaterm";
 	"preservim/nerdtree";
-	"yasukotelin/notelight";
+	"nvim-lualine/lualine.nvim";
+	"kyazdani42/nvim-web-devicons";
+	"NLKNguyen/papercolor-theme";
+	"numToStr/Comment.nvim";
 }
+
+require('lualine').setup()

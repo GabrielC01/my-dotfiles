@@ -5,9 +5,10 @@ vim.opt.shiftwidth = 4
 vim.opt.autoindent = true
 vim.opt.smartindent = true
 vim.opt.background = "light"
+vim.opt.clipboard = "unnamedplus"
 vim.opt.statusline = " %f %r %m %= [%l,%c] [%p%%] "
 vim.cmd [[
-	colorscheme notelight
+	colorscheme PaperColor
 
 	let mapleader = ','
 	nmap <S-t>	:tabedit 
@@ -22,4 +23,19 @@ vim.cmd [[
 	let g:floaterm_keymap_prev   = '<leader>h'
 	let g:floaterm_keymap_next   = '<leader>l'
 	let g:floaterm_keymap_toggle = '<leader>t'
+
+	if has("autocmd")
+		augroup templates
+			autocmd BufNewFile *.sh 0r ~/Modelos/neovim/skeleton.sh
+			autocmd BufNewFile *.c 0r ~/Modelos/neovim/skeleton.c
+			autocmd BufNewFile *.cpp 0r ~/Modelos/neovim/skeleton.cpp
+			autocmd BufNewFile *.php 0r ~/Modelos/neovim/skeleton.php
+			autocmd BufNewFile *.html 0r ~/Modelos/neovim/skeleton.html
+			autocmd BufNewFile *.js 0r ~/Modelos/neovim/skeleton.js
+			autocmd BufNewFile *.css 0r ~/Modelos/neovim/skeleton.css
+			autocmd BufNewFile *.rs 0r ~/Modelos/neovim/skeleton.rs
+		augroup END
+	endif
 ]]
+
+require('Comment').setup()
