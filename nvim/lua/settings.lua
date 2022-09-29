@@ -4,17 +4,19 @@ vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.autoindent = true
 vim.opt.smartindent = true
-vim.opt.background = "light"
+--vim.opt.background = "light"
 vim.opt.clipboard = "unnamedplus"
 vim.opt.statusline = " %f %r %m %= [%l,%c] [%p%%] "
 vim.cmd [[
-	colorscheme PaperColor
+	colorscheme solarized8_flat
 
 	let mapleader = ','
 	nmap <S-t>	:tabedit 
 	nmap H		:tabprevious <CR>
 	nmap L		:tabnext <CR>
 	nmap <leader>f :NERDTreeToggle <CR>
+	nmap <leader><F9> :set background=dark<CR>
+	nmap <leader><F10> :set background=light<CR>
 	
 	let g:floaterm_title = '($1/$2)'
 	let g:floaterm_width = 0.9

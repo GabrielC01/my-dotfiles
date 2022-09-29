@@ -7,6 +7,7 @@ require "paq" {
 	"kyazdani42/nvim-web-devicons";
 	"NLKNguyen/papercolor-theme";
 	"numToStr/Comment.nvim";
+	"lifepillar/vim-solarized8";
 }
 
 require('lualine').setup()
