@@ -4,10 +4,12 @@ require "paq" {
 	"voldikss/vim-floaterm";
 	"preservim/nerdtree";
 	"nvim-lualine/lualine.nvim";
-	"kyazdani42/nvim-web-devicons";
-	"NLKNguyen/papercolor-theme";
 	"numToStr/Comment.nvim";
-	"lifepillar/vim-solarized8";
+	"projekt0n/github-nvim-theme";
+	"tpope/vim-fugitive";
+	"nvim-tree/nvim-web-devicons";
+	"nvim-tree/nvim-tree.lua";
 }
 
-require('lualine').setup()
+--require('lualine').setup()
+--require('lualine').setup { options = { theme = 'enfocado' } }
