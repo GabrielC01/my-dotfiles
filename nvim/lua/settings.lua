@@ -6,7 +6,7 @@ vim.opt.autoindent = true
 vim.opt.smartindent = true
 vim.opt.background = "light"
 vim.opt.clipboard = "unnamedplus"
-vim.opt.statusline = '  %< %{FugitiveHead()}  %f %m %r %w %= Ln %l, Col %c  '
+vim.opt.statusline = ' %{FugitiveHead()} %f %m %r %w %= Ln %l, Col %c  '
 
 -- disable netrw at the very start of your init.lua (strongly advised)
 vim.g.loaded_netrw = 1
@@ -59,7 +59,6 @@ vim.cmd [[
 	let g:floaterm_keymap_next   = '<leader>l'
 	let g:floaterm_keymap_toggle = '<leader>t'
 
-	autocmd VimEnter * NvimTreeToggle
 
 	if has("autocmd")
 		augroup templates
