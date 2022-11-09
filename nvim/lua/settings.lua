@@ -36,6 +36,7 @@ require("nvim-tree").setup({
 		dotfiles = true,
 	},
 })
+
 vim.cmd [[
 	colorscheme github_light
 	let mapleader = ','
@@ -50,7 +51,9 @@ vim.cmd [[
 	nmap <leader>w :tabclose<CR>
 	nmap <leader>x :wqa<CR>
 	nmap <leader>X :qa!<CR>
-	
+	nmap <leader>m :Goyo <CR>
+	nmap <leader>l :Limelight <CR>
+
 	let g:floaterm_title = '($1/$2)'
 	let g:floaterm_width = 0.9
 	let g:floaterm_height = 0.9

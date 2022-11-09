@@ -9,6 +9,9 @@ require "paq" {
 	"tpope/vim-fugitive";
 	"nvim-tree/nvim-web-devicons";
 	"nvim-tree/nvim-tree.lua";
+	"junegunn/goyo.vim";
+	"junegunn/limelight.vim";
+	"iamcco/markdown-preview.nvim";
 }
 
 --require('lualine').setup()
