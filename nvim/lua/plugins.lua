@@ -14,6 +14,7 @@ require "paq" {
 	"iamcco/markdown-preview.nvim";
 	"jacoborus/tender.vim";
 	"NLKNguyen/papercolor-theme";
+	"savq/melange";
 }
 
 require('lualine').setup()

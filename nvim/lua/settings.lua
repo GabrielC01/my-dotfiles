@@ -38,7 +38,7 @@ require("nvim-tree").setup({
 })
 
 vim.cmd [[
-	colorscheme PaperColor
+	colorscheme melange
 	let mapleader = ','
 	nmap <S-t>	:tabedit 
 	nmap H		:tabprevious <CR>
