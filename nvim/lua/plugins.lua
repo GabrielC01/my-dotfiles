@@ -12,7 +12,8 @@ require "paq" {
 	"junegunn/goyo.vim";
 	"junegunn/limelight.vim";
 	"iamcco/markdown-preview.nvim";
+	"jacoborus/tender.vim";
+	"NLKNguyen/papercolor-theme";
 }
 
---require('lualine').setup()
---require('lualine').setup { options = { theme = 'enfocado' } }
+require('lualine').setup()

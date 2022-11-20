@@ -38,7 +38,7 @@ require("nvim-tree").setup({
 })
 
 vim.cmd [[
-	colorscheme github_light
+	colorscheme PaperColor
 	let mapleader = ','
 	nmap <S-t>	:tabedit 
 	nmap H		:tabprevious <CR>
@@ -74,10 +74,6 @@ vim.cmd [[
 			autocmd BufNewFile *.rs 0r ~/.config/nvim/templates/skeleton.rs
 		augroup END
 	endif
-
-	let g:lightline = {
-      \ 'colorscheme': 'solarized',
-      \ }
 ]]
 
 require('Comment').setup()
