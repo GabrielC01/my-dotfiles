@@ -1,20 +1,53 @@
 require "paq" {
     "savq/paq-nvim";                  -- Let Paq manage itself
 
-	"voldikss/vim-floaterm";
-	"preservim/nerdtree";
-	"nvim-lualine/lualine.nvim";
-	"numToStr/Comment.nvim";
-	"projekt0n/github-nvim-theme";
-	"tpope/vim-fugitive";
-	"nvim-tree/nvim-web-devicons";
-	"nvim-tree/nvim-tree.lua";
-	"junegunn/goyo.vim";
-	"junegunn/limelight.vim";
-	"iamcco/markdown-preview.nvim";
-	"jacoborus/tender.vim";
-	"NLKNguyen/papercolor-theme";
-	"savq/melange";
+    "nvim-lualine/lualine.nvim";
+    "yorik1984/newpaper.nvim";
+    "voldikss/vim-floaterm";
 }
 
-require('lualine').setup()
+require("newpaper").setup()
+require("lualine").setup({
+    options = {
+	    theme = "newpaper",
+    },
+    -- example config of sections
+    sections = {
+        lualine_b = {
+            {
+                "diff",
+                diff_color = {
+                -- specific colors from theme with bg color of section
+                    added    = "GitSignsAdd",
+                    modified = "GitSignsChange",
+                    removed  = "GitSignsDelete",
+                },
+                symbols = {
+                    added    = " ",
+                    modified = " ",
+                    removed  = " ",
+                },
+            },
+        },
+        lualine_x = {
+            {
+                "diagnostics",
+                sources = { "nvim_diagnostic" },
+                sections = { "error", "warn", "info", "hint" },
+                diagnostics_color = {
+                -- specific colors from theme with bg color of section
+                    error = "LualineDiagnosticError",
+                    warn  = "LualineDiagnosticWarn",
+                    info  = "LualineDiagnosticInfo",
+                    hint  = "LualineDiagnosticHint",
+                },
+                symbols = {
+                    error = " ",
+                    warn  = " ",
+                    info  = " ",
+                    hint  = " ",
+                },
+            },
+        },
+    }
+})
