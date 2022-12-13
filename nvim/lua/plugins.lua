@@ -4,6 +4,8 @@ require "paq" {
     "nvim-lualine/lualine.nvim";
     "yorik1984/newpaper.nvim";
     "voldikss/vim-floaterm";
+	"nvim-lua/plenary.nvim";
+	"nvim-telescope/telescope.nvim";
 }
 
 require("newpaper").setup()
