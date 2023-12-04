@@ -1,0 +1,8 @@
+$ /nix/store/infv5x19qpc9icnc6msiakd2356f97gz-ghc-9.4.8-with-packages/bin/ghc --make xmonad.hs -i -ilib -fforce-recomp -main-is main -v0 -outputdir /home/gabriel/.xmonad/build-x86_64-linux -o /home/gabriel/.xmonad/xmonad-x86_64-linux
+
+xmonad.hs:15:1: warning: [-Wtabs]
+    Tab character found here, and in 20 further locations.
+    Suggested fix: Please use spaces instead.
+   |
+15 |         , terminal = "alacritty"
+   | ^^^^^^^^

@@ -1,0 +1,14 @@
+Config { font = "Monoid 10"
+        , borderColor = "#ba160c"
+        , border = BottomB
+        , bgColor = "white"
+        , fgColor = "#ba160c"
+        , position = TopW L 100
+        , commands = [    Run Cpu [ "--template", "UCP: <total>0%", "-L","3","-H","50","--normal","green","--high","red"] 10
+                        , Run Date "%a %b %_d %Y %H:%M:%S" "date" 10
+                        , Run Memory ["-t","MEM: <usedratio>%"] 10
+                        ]
+        , sepChar = "%"
+        , alignSep = "}{"
+        , template = " %memory% }%date%{ %cpu% "
+        }
