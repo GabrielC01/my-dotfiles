@@ -3,7 +3,7 @@ local map = vim.api.nvim_set_keymap
 vim.g.mapleader = ","
 
 -- Default
-map("n", "<S-t>", "<CMD>tabedit ", {})
+map("n", "<S-t>", ":tabedit ", {})
 map("n", "<S-h>", "<CMD>tabprevious<CR>", {})
 map("n", "<S-l>", "<CMD>tabnext<CR>", {})
 map("n", "<S-q>", "<CMD>tabclose<CR>", {})

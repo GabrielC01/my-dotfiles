@@ -2,16 +2,15 @@ require "paq" {
     "savq/paq-nvim";                  -- Let Paq manage itself
 
     "nvim-lualine/lualine.nvim";
-    "yorik1984/newpaper.nvim";
     "voldikss/vim-floaterm";
 	"nvim-lua/plenary.nvim";
 	"nvim-telescope/telescope.nvim";
+	"morhetz/gruvbox";
 }
 
-require("newpaper").setup()
 require("lualine").setup({
     options = {
-	    theme = "newpaper",
+	    theme = "auto",
     },
     -- example config of sections
     sections = {
